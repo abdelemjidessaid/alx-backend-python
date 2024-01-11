@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 """
     Module of sum_list function
 """
