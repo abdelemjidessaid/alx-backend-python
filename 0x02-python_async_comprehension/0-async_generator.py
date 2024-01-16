@@ -4,9 +4,10 @@
 """
 import random
 import asyncio
+from typing import Generator
 
 
-async def async_generator() -> None:
+async def async_generator() -> Generator[float, None, None]:
     """
         Function that every 1 second it yields a random number
     """
