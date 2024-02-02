@@ -3,7 +3,7 @@
     Module that contains test on test_client Module
 """
 import unittest
-from unittest.mock import Mock, patch
+from unittest.mock import Mock, patch, PropertyMock
 from parameterized import parameterized
 import client
 from client import GithubOrgClient
@@ -21,7 +21,7 @@ class TestGithubOrgClient(unittest.TestCase):
     @patch('client.get_json')
     def test_org(self, org, expected, get_patch):
         """
-            Method that tests the test_client.org() Method
+            Method that tests the GithubOrgClient.org() Method
         """
         get_patch.return_value = expected
         instance = GithubOrgClient(org)
@@ -29,3 +29,14 @@ class TestGithubOrgClient(unittest.TestCase):
         get_patch.assert_called_once_with(
             f'https://api.github.com/orgs/{org}'
         )
+
+    def test_public_repos_url(self):
+        """
+            Method that tests the GithubOrgClient._public_repos_url Method
+        """
+        expected = "abdelemjidessaid"
+        payload = {"repos_url": expected}
+        mocked_method = 'client.GithubOrgClient.org'
+        with patch(mocked_method, PropertyMock(return_value=payload)):
+            client = GithubOrgClient('heroshima')
+            self.assertEqual(client._public_repos_url, expected)
