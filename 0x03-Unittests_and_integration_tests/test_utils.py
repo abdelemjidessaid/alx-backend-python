@@ -74,16 +74,19 @@ class TestMemoize(unittest.TestCase):
             Method that tests memoize function from utils Module
         """
         class TestClass:
-            """ class TestClass
+            """
+                class TestClass
             """
             def a_method(self):
-                """ Method that returns 42 always
+                """
+                    Method that returns 42 always
                 """
                 return 42
 
             @memoize
             def a_property(self):
-                """ Method that memoize the a_method and returns its result
+                """
+                    Method that memoize the a_method and returns its result
                 """
                 return self.a_method()
 
