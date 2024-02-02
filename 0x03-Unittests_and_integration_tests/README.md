@@ -1,4 +1,39 @@
-# 0x03\. Unittests and Integration Tests
+```
+░█████╗░██╗░░██╗░█████╗░██████╗░░░░  
+██╔══██╗╚██╗██╔╝██╔══██╗╚════██╗░░░  
+██║░░██║░╚███╔╝░██║░░██║░█████╔╝░░░  
+██║░░██║░██╔██╗░██║░░██║░╚═══██╗░░░  
+╚█████╔╝██╔╝╚██╗╚█████╔╝██████╔╝██╗  
+░╚════╝░╚═╝░░╚═╝░╚════╝░╚═════╝░╚═╝  
+
+██╗░░░██╗███╗░░██╗██╗████████╗████████╗███████╗░██████╗████████╗░██████╗
+██║░░░██║████╗░██║██║╚══██╔══╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██║░░░██║██╔██╗██║██║░░░██║░░░░░░██║░░░█████╗░░╚█████╗░░░░██║░░░╚█████╗░
+██║░░░██║██║╚████║██║░░░██║░░░░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░░╚═══██╗
+╚██████╔╝██║░╚███║██║░░░██║░░░░░░██║░░░███████╗██████╔╝░░░██║░░░██████╔╝
+░╚═════╝░╚═╝░░╚══╝╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═════╝░
+
+░█████╗░███╗░░██╗██████╗░
+██╔══██╗████╗░██║██╔══██╗
+███████║██╔██╗██║██║░░██║
+██╔══██║██║╚████║██║░░██║
+██║░░██║██║░╚███║██████╔╝
+╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░
+
+██╗███╗░░██╗████████╗███████╗░██████╗░██████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗
+██║████╗░██║╚══██╔══╝██╔════╝██╔════╝░██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
+██║██╔██╗██║░░░██║░░░█████╗░░██║░░██╗░██████╔╝███████║░░░██║░░░██║██║░░██║██╔██╗██║
+██║██║╚████║░░░██║░░░██╔══╝░░██║░░╚██╗██╔══██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║
+██║██║░╚███║░░░██║░░░███████╗╚██████╔╝██║░░██║██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║
+╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝
+
+████████╗███████╗░██████╗████████╗░██████╗
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
+░░░██║░░░█████╗░░╚█████╗░░░░██║░░░╚█████╗░
+░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░░╚═══██╗
+░░░██║░░░███████╗██████╔╝░░░██║░░░██████╔╝
+░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═════╝░
+```
 
 <br><br><br>
 
@@ -22,15 +57,15 @@ $ python -m unittest path/to/test_file.py
 
 **Read or watch:**
 
-- [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html 'unittest — Unit testing framework')
-- [unittest.mock — mock object library](https://docs.python.org/3/library/unittest.mock.html 'unittest.mock — mock object library')
-- [How to mock a readonly property with mock?](https://stackoverflow.com/questions/11836436/how-to-mock-a-readonly-property-with-mock 'How to mock a readonly property with mock?')
-- [parameterized](https://pypi.org/project/parameterized/ 'parameterized')
-- [Memoization](https://en.wikipedia.org/wiki/Memoization 'Memoization')
+- [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html "unittest — Unit testing framework")
+- [unittest.mock — mock object library](https://docs.python.org/3/library/unittest.mock.html "unittest.mock — mock object library")
+- [How to mock a readonly property with mock?](https://stackoverflow.com/questions/11836436/how-to-mock-a-readonly-property-with-mock "How to mock a readonly property with mock?")
+- [parameterized](https://pypi.org/project/parameterized/ "parameterized")
+- [Memoization](https://en.wikipedia.org/wiki/Memoization "Memoization")
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ 'explain to anyone'), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 - The difference between unit and integration tests.
 - Common testing patterns such as mocking, parametrizations and fixtures
@@ -51,7 +86,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ## Required Files
 
-### `utils.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/utils.py 'download'))
+### `utils.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/utils.py "download"))
 
 Click to show/hide file contents
 
@@ -133,7 +168,7 @@ def memoize(fn: Callable) -> Callable:
     return property(memoized)
 ```
 
-### `client.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/client.py 'download'))
+### `client.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/client.py "download"))
 
 Click to show/hide file contents
 
@@ -198,7 +233,7 @@ class GithubOrgClient:
         return has_license
 ```
 
-### `fixtures.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/fixtures.py 'download'))
+### `fixtures.py` (or [download](https://intranet-projects-files.s3.amazonaws.com/webstack/fixtures.py "download"))
 
 Click to show/hide file contents
 
