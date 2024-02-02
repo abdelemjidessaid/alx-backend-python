@@ -7,6 +7,7 @@ from unittest.mock import Mock, patch, PropertyMock
 from parameterized import parameterized
 import client
 from client import GithubOrgClient
+from fixtures import TEST_PAYLOAD
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -63,3 +64,13 @@ class TestGithubOrgClient(unittest.TestCase):
             self.assertEqual(heroshima.public_repos(45), [])
             get_json_mock.assert_called_once_with("abdelemjidessaid")
             y.assert_called_once_with()
+
+    @parameterized.expand([
+        ({'license': {'key': 'my_license'}}, 'my_license', True),
+        ({'license': {'key': 'other_license'}}, 'my_license', False)
+    ])
+    def test_has_license(self, repo, license, expected):
+        """
+            Test the license checker
+        """
+        self.assertEqual(GithubOrgClient.has_license(repo, license), expected)
